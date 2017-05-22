@@ -14,8 +14,8 @@ def load_file(filename):
     return content
     
 def current_time():
-    """ Return current datetime in iso format"""
-    cur_time = datetime.datetime.now().isoformat()
+    """ Return current datetime in iso format with timezone UTC"""
+    cur_time = datetime.datetime.utcnow().isoformat() + "Z"
     return cur_time
 
 def create_identifier(base_string):
