@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # script to create output of tests run on current setup.
 # output is stored in directory "curr"
 

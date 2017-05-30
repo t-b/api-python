@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Script to perform all tests
 
 # Requires existing "orig" directory containing signature file
