@@ -25,7 +25,7 @@ printset = set(string.printable)
 # convert an integer to an string of letters
 # this done so hashes are all letters and thus not used by function combine_messages 
 def int2alph(val):
-    assert isinstance(val, int)
+    assert isinstance(val, int) or isinstance(val, long)
     alph = []
     num_chars = 52  # a-z, A-Z
     while val > 0:
