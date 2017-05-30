@@ -281,7 +281,7 @@ def get_prefix(val, fileObj, num_chars):
     elif isinstance(val, h5py.h5r.RegionReference):
         prefix = summarize_region_reference(val, fileObj)
         return prefix
-    vs_msg = "Unknown type in value_summary.get_prefix, val=%s, type=%s" % (val, type(val))
+    vs_msg = "Unknown type in value_summary.get_prefix, val=%.100s[...], type=%s" % (val, type(val))
     # vs_msg_type = "warning"
     # import pdb; pdb.set_trace()  
     raise SystemError(vs_msg)
